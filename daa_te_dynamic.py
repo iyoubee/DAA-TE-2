@@ -3,15 +3,6 @@ import time
 
 
 def read_graph_from_file(input_file):
-    """
-    Reads an adjacency matrix from a text file and returns it as a list of lists.
-
-    Parameters:
-    - input_file: Name of the input text file.
-
-    Returns:
-    - A list of lists representing the adjacency matrix.
-    """
     graph = []
     with open(input_file, 'r') as file:
         for line in file:
@@ -68,7 +59,7 @@ def Hamiltonian_path(adj, N):
 # Example usage:
 # generated_graph_16, generated_graph_18, generated_graph_20
 # non_hamiltonian_graph_16, non_hamiltonian_graph_18, non_hamiltonian_graph_20
-input_file = 'non_hamiltonian_graph_20.txt'
+input_file = 'generated_graph_20.txt'
 loaded_graph = read_graph_from_file(input_file)
 N = len(loaded_graph)
 
